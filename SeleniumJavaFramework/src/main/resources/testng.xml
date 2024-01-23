@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="HRM Application Test Automation Suite">
+<suite name="HRM Application Test Automation Suites">
 	<test name="HRM app Test cases">
 
 		<classes>
