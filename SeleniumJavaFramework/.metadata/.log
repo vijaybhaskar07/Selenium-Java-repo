@@ -57,3 +57,18 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/vijayb
 	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:466)
 	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
 	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-01-27 11:17:51.054
+!MESSAGE https://github.com/vijaybhaskar07/Selenium-Java-repo.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/vijaybhaskar07/Selenium-Java-repo.git: not authorized
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/vijaybhaskar07/Selenium-Java-repo.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:466)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
