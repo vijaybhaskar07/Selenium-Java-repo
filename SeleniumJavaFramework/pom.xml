@@ -21,9 +21,7 @@
 			<artifactId>testng</artifactId>
 			<version>7.9.0</version>
 			<scope>test</scope>
-		</dependency>
-
-		
+		</dependency>		
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
@@ -66,15 +64,12 @@
 			<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
 		</dependency>
-
 	
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>2.22.0</version>
-		</dependency>
-
-	
+		</dependency>	
 	
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -87,16 +82,10 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.1</version>
-</dependency>
-
-		
-		
+</dependency>	
     
-
 
   </dependencies>
 
-    
-	
 
 </project>

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [HRM Application Test Automation Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="HRM app Test cases(failed)">
+  <test thread-count="5" name="HRM application Test cases(failed)">
     <classes>
       <class name="com.hrm.qa.tests.LoginPageTest">
         <methods>
-          <include name="loginTestDataProvider" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="loginTestDataProvider"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="loginErrorMessageTest"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginpageNameTest"/>
         </methods>
       </class> <!-- com.hrm.qa.tests.LoginPageTest -->
       <class name="com.hrm.qa.tests.DashBoardPageTest">
@@ -19,10 +17,10 @@
           <include name="verifyDashboardPageTitleTest"/>
           <include name="seUp"/>
           <include name="verifyDashboardLabelTest"/>
-          <include name="tearDown"/>
           <include name="verifyAssignLeaveButtonTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.hrm.qa.tests.DashBoardPageTest -->
     </classes>
-  </test> <!-- HRM app Test cases(failed) -->
+  </test> <!-- HRM application Test cases(failed) -->
 </suite> <!-- Failed suite [HRM Application Test Automation Suite] -->

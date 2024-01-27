@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T17:28:23 IST" name="Default suite" finished-at="2024-01-17T17:29:04 IST" duration-ms="41077">
+  <suite started-at="2024-01-26T23:19:16 IST" name="Default suite" finished-at="2024-01-26T23:19:50 IST" duration-ms="34782">
     <groups>
     </groups>
-    <test started-at="2024-01-17T17:28:23 IST" name="Default test" finished-at="2024-01-17T17:29:04 IST" duration-ms="41077">
+    <test started-at="2024-01-26T23:19:16 IST" name="Default test" finished-at="2024-01-26T23:19:50 IST" duration-ms="34782">
       <class name="com.hrm.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:24 IST" name="setUp" finished-at="2024-01-17T17:28:31 IST" duration-ms="7241" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:15 IST" name="beforeSuite" finished-at="2024-01-26T23:19:16 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:16 IST" name="setUp" finished-at="2024-01-26T23:19:20 IST" duration-ms="3757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:31 IST" name="loginTestDataProvider" data-provider="getLoginData" finished-at="2024-01-17T17:28:32 IST" duration-ms="870" status="PASS">
+        <test-method signature="loginTestDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:20 IST" name="loginTestDataProvider" data-provider="getLoginData" finished-at="2024-01-26T23:19:21 IST" duration-ms="516" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,80 +28,120 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "com.hrm.qa.extentReports.ExtentReport.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "com.hrm.qa.extentReports.ExtentReport.test" is null
+at com.hrm.qa.pages.LoginPage.validateLoginData(LoginPage.java:59)
+at com.hrm.qa.tests.LoginPageTest.loginTestDataProvider(LoginPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestDataProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:32 IST" name="tearDown" finished-at="2024-01-17T17:28:33 IST" duration-ms="317" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:21 IST" name="tearDown" finished-at="2024-01-26T23:19:21 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:33 IST" name="setUp" finished-at="2024-01-17T17:28:39 IST" duration-ms="5886" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:21 IST" name="setUp" finished-at="2024-01-26T23:19:25 IST" duration-ms="4010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:39 IST" name="loginPageTitleTest" finished-at="2024-01-17T17:28:39 IST" duration-ms="21" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:25 IST" name="loginPageTitleTest" finished-at="2024-01-26T23:19:25 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:39 IST" name="tearDown" finished-at="2024-01-17T17:28:39 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:25 IST" name="tearDown" finished-at="2024-01-26T23:19:25 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:39 IST" name="setUp" finished-at="2024-01-17T17:28:43 IST" duration-ms="4043" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:25 IST" name="setUp" finished-at="2024-01-26T23:19:29 IST" duration-ms="4346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginpageNameTest()[pri:2, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:43 IST" name="loginpageNameTest" finished-at="2024-01-17T17:28:43 IST" duration-ms="668" status="PASS">
+        <test-method signature="loginpageNameTest()[pri:2, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:29 IST" name="loginpageNameTest" finished-at="2024-01-26T23:19:30 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpageNameTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:43 IST" name="tearDown" finished-at="2024-01-17T17:28:44 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:30 IST" name="tearDown" finished-at="2024-01-26T23:19:30 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:44 IST" name="setUp" finished-at="2024-01-17T17:28:47 IST" duration-ms="3490" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:30 IST" name="setUp" finished-at="2024-01-26T23:19:34 IST" duration-ms="3900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:3, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:47 IST" name="loginTest" finished-at="2024-01-17T17:28:48 IST" duration-ms="618" status="PASS">
+        <test-method signature="loginTest()[pri:3, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:34 IST" name="loginTest" finished-at="2024-01-26T23:19:34 IST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:48 IST" name="tearDown" finished-at="2024-01-17T17:28:48 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:34 IST" name="tearDown" finished-at="2024-01-26T23:19:35 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:48 IST" name="setUp" finished-at="2024-01-17T17:28:52 IST" duration-ms="3714" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:35 IST" name="setUp" finished-at="2024-01-26T23:19:38 IST" duration-ms="3723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginErrorMessageTest()[pri:4, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:28:52 IST" name="loginErrorMessageTest" finished-at="2024-01-17T17:29:04 IST" duration-ms="11992" status="FAIL">
+        <test-method signature="loginErrorMessageTest()[pri:4, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:38 IST" name="loginErrorMessageTest" finished-at="2024-01-26T23:19:50 IST" duration-ms="11613" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()= 'Invalid credentials']"}
-  (Session info: chrome=120.0.6099.130)
+  (Session info: chrome=120.0.6099.225)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d2182ca6680529e0c277621a11db5f1e, findElement {using=xpath, value=//p[text()= 'Invalid credentials']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\GUDDAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61553/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2182ca6680529e0c277621a11db5f1e]]>
+Command: [528e4f9a43d89deb42c4dc5c51058dc6, findElement {using=xpath, value=//p[text()= 'Invalid credentials']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\GUDDAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51708}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51708/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 528e4f9a43d89deb42c4dc5c51058dc6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()= 'Invalid credentials']"}
-  (Session info: chrome=120.0.6099.130)
+  (Session info: chrome=120.0.6099.225)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d2182ca6680529e0c277621a11db5f1e, findElement {using=xpath, value=//p[text()= 'Invalid credentials']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\GUDDAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61553/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2182ca6680529e0c277621a11db5f1e
+Command: [528e4f9a43d89deb42c4dc5c51058dc6, findElement {using=xpath, value=//p[text()= 'Invalid credentials']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\GUDDAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51708}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51708/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 528e4f9a43d89deb42c4dc5c51058dc6
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -111,13 +155,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy17.getText(Unknown Source)
-at com.hrm.qa.pages.LoginPage.validateLoginErrorMessage(LoginPage.java:62)
-at com.hrm.qa.tests.LoginPageTest.loginErrorMessageTest(LoginPageTest.java:64)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+at com.hrm.qa.pages.LoginPage.validateLoginErrorMessage(LoginPage.java:65)
+at com.hrm.qa.tests.LoginPageTest.loginErrorMessageTest(LoginPageTest.java:69)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
@@ -126,7 +170,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -148,10 +192,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorMessageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@14028087]" started-at="2024-01-17T17:29:04 IST" name="tearDown" finished-at="2024-01-17T17:29:04 IST" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:50 IST" name="tearDown" finished-at="2024-01-26T23:19:50 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@3b69e7d1]" started-at="2024-01-26T23:19:50 IST" name="afterSuite" finished-at="2024-01-26T23:19:51 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- com.hrm.qa.tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
