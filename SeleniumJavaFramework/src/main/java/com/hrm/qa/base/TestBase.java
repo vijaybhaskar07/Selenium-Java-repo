@@ -8,11 +8,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
-import com.hrm.qa.util.MyListener;
+import com.hrm.qa.extentReports.ExtentReport;
 import com.hrm.qa.util.TestUtil;
 
 public class TestBase {
@@ -45,11 +45,11 @@ public class TestBase {
 
 		}
 		 /*else {
-			if (browserName.equals("browserName")) {
-				System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
-				driver = new FirefoxDriver();
-			}*/
-		
+			if (browserName.equals("edge")) {
+				System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
+				driver = new EdgeDriver();
+			}
+		*/
 		
 		
 		driver.manage().window().maximize();
@@ -59,6 +59,16 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 
 	}
+	
+//	@BeforeSuite
+//	public static void beforeSuite() {
+//		ExtentReport.initReports();
+//	}
+//	
+//	@AfterSuite
+//	public static void afterSuite() throws IOException {
+//		ExtentReport.flushReports();
+//	}
 
 //}
 }

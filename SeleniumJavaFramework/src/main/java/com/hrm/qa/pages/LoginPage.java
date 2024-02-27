@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hrm.qa.base.TestBase;
+import com.hrm.qa.extentReports.ExtentReport;
 
 public class LoginPage extends TestBase {
 
@@ -46,6 +47,7 @@ public class LoginPage extends TestBase {
 		userName.sendKeys(un);
 		password.sendKeys(pwd);
 		loginBtn.click();
+		//ExtentReport.test.pass("Login button clicked successfully");
 		return new DashBoardPage();
 
 	}
@@ -53,7 +55,7 @@ public class LoginPage extends TestBase {
 	public DashBoardPage validateLoginData(String uname, String pwd) {
 		userName.sendKeys(uname);
 		password.sendKeys(pwd);
-		loginBtn.click();
+		loginBtn.click();	
 		return new DashBoardPage();
 		
 	}

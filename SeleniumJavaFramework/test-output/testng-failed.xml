@@ -6,8 +6,8 @@
       <class name="com.hrm.qa.tests.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="loginTest"/>
           <include name="tearDown"/>
-          <include name="loginErrorMessageTest"/>
         </methods>
       </class> <!-- com.hrm.qa.tests.LoginPageTest -->
     </classes>
