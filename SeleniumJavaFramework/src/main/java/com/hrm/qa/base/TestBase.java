@@ -60,6 +60,7 @@ public class TestBase {
 
 	}
 	
+
 //	@BeforeSuite
 //	public static void beforeSuite() {
 //		ExtentReport.initReports();
@@ -69,6 +70,17 @@ public class TestBase {
 //	public static void afterSuite() throws IOException {
 //		ExtentReport.flushReports();
 //	}
+
+	@BeforeSuite
+	public static void beforeSuite() {
+		ExtentReport.initReports();
+	}
+	
+	@AfterSuite
+	public static void afterSuite() throws IOException {
+		ExtentReport.flushReports();
+	}
+
 
 //}
 }

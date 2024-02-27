@@ -1,9 +1,8 @@
 package com.hrm.qa.pages;
-
+import com.hrm.qa.pages.DashBoardPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.hrm.qa.base.TestBase;
 import com.hrm.qa.extentReports.ExtentReport;
 
@@ -48,6 +47,7 @@ public class LoginPage extends TestBase {
 		password.sendKeys(pwd);
 		loginBtn.click();
 		//ExtentReport.test.pass("Login button clicked successfully");
+		ExtentReport.test.pass("Login button clicked successfully");
 		return new DashBoardPage();
 
 	}
@@ -56,6 +56,7 @@ public class LoginPage extends TestBase {
 		userName.sendKeys(uname);
 		password.sendKeys(pwd);
 		loginBtn.click();	
+		ExtentReport.test.pass("Welcome DashBoard Page");
 		return new DashBoardPage();
 		
 	}

@@ -5,9 +5,16 @@
     <classes>
       <class name="com.hrm.qa.tests.LoginPageTest">
         <methods>
+          <include name="loginTestDataProvider" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="loginTest"/>
           <include name="tearDown"/>
+<<<<<<< HEAD
+=======
+          <include name="loginErrorMessageTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+>>>>>>> 8b33e1e007f1d93c195d448706eb1d1ca569c9ec
         </methods>
       </class> <!-- com.hrm.qa.tests.LoginPageTest -->
     </classes>
