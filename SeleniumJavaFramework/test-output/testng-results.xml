@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-01T14:33:41 IST" name="Default suite" finished-at="2024-02-01T14:34:19 IST" duration-ms="38912">
+  <suite started-at="2024-02-27T16:55:47 IST" name="Default suite" finished-at="2024-02-27T16:56:30 IST" duration-ms="42796">
     <groups>
     </groups>
-    <test started-at="2024-02-01T14:33:41 IST" name="Default test" finished-at="2024-02-01T14:34:19 IST" duration-ms="38912">
+    <test started-at="2024-02-27T16:55:47 IST" name="Default test" finished-at="2024-02-27T16:56:30 IST" duration-ms="42796">
       <class name="com.hrm.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:41 IST" name="setUp" finished-at="2024-02-01T14:33:48 IST" duration-ms="7058" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:55:50 IST" name="setUp" finished-at="2024-02-27T16:55:58 IST" duration-ms="8279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:48 IST" name="loginTestDataProvider" data-provider="getLoginData" finished-at="2024-02-01T14:33:50 IST" duration-ms="1098" status="PASS">
+        <test-method signature="loginTestDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:55:58 IST" name="loginTestDataProvider" data-provider="getLoginData" finished-at="2024-02-27T16:56:00 IST" duration-ms="1791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,39 +27,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestDataProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:50 IST" name="tearDown" finished-at="2024-02-01T14:33:50 IST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:00 IST" name="tearDown" finished-at="2024-02-27T16:56:01 IST" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:50 IST" name="setUp" finished-at="2024-02-01T14:33:56 IST" duration-ms="6492" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:01 IST" name="setUp" finished-at="2024-02-27T16:56:05 IST" duration-ms="4562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:56 IST" name="loginPageTitleTest" finished-at="2024-02-01T14:33:56 IST" duration-ms="27" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:05 IST" name="loginPageTitleTest" finished-at="2024-02-27T16:56:05 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:56 IST" name="tearDown" finished-at="2024-02-01T14:33:57 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:05 IST" name="tearDown" finished-at="2024-02-27T16:56:05 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:33:57 IST" name="setUp" finished-at="2024-02-01T14:34:02 IST" duration-ms="5174" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:05 IST" name="setUp" finished-at="2024-02-27T16:56:13 IST" duration-ms="7869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginpageNameTest()[pri:2, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:02 IST" name="loginpageNameTest" finished-at="2024-02-01T14:34:02 IST" duration-ms="535" status="PASS">
+        <test-method signature="loginpageNameTest()[pri:2, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:13 IST" name="loginpageNameTest" finished-at="2024-02-27T16:56:14 IST" duration-ms="897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpageNameTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:02 IST" name="tearDown" finished-at="2024-02-01T14:34:03 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:14 IST" name="tearDown" finished-at="2024-02-27T16:56:15 IST" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:03 IST" name="setUp" finished-at="2024-02-01T14:34:10 IST" duration-ms="7169" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:15 IST" name="setUp" finished-at="2024-02-27T16:56:21 IST" duration-ms="6270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:3, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:10 IST" name="loginTest" finished-at="2024-02-01T14:34:10 IST" duration-ms="5" status="FAIL">
+        <test-method signature="loginTest()[pri:3, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:21 IST" name="loginTest" finished-at="2024-02-27T16:56:21 IST" duration-ms="8" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.hrm.qa.extentReports.ExtentReport.extent" is null]]>
@@ -102,19 +102,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:10 IST" name="tearDown" finished-at="2024-02-01T14:34:10 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:21 IST" name="tearDown" finished-at="2024-02-27T16:56:21 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:10 IST" name="setUp" finished-at="2024-02-01T14:34:17 IST" duration-ms="7074" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:21 IST" name="setUp" finished-at="2024-02-27T16:56:26 IST" duration-ms="5096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginErrorMessageTest()[pri:4, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:17 IST" name="loginErrorMessageTest" finished-at="2024-02-01T14:34:19 IST" duration-ms="2121" status="PASS">
+        <test-method signature="loginErrorMessageTest()[pri:4, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:26 IST" name="loginErrorMessageTest" finished-at="2024-02-27T16:56:29 IST" duration-ms="3088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorMessageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-01T14:34:19 IST" name="tearDown" finished-at="2024-02-01T14:34:19 IST" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.qa.tests.LoginPageTest@a514af7]" started-at="2024-02-27T16:56:29 IST" name="tearDown" finished-at="2024-02-27T16:56:30 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
