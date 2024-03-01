@@ -60,13 +60,13 @@ public class LoginPageTest extends TestBase {
 	
 	
 
-	@Test(dataProvider = "getLoginData")
+	@Test(priority =4, dataProvider = "getLoginData")
 	public void loginTestDataProvider(String username, String password) {
 		dashboardPage = loginPage.validateLoginData(username, password);
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void loginErrorMessageTest() {
 		loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("pwd"));
 		String actualErrorMessage = loginPage.validateLoginErrorMessage();

@@ -21,7 +21,7 @@ public class DashBoardPageTest extends TestBase {
 	}
 
 	@BeforeMethod
-	public void seUp() {
+	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
 		dashboardPage = new DashBoardPage();
@@ -29,19 +29,19 @@ public class DashBoardPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(priority =1)
 	public void verifyDashboardPageTitleTest() {
 		String dashboardTitle = driver.getTitle();
 		Assert.assertEquals(dashboardTitle, "OrangeHRM", "DashboardTitle not matched");
 	}
 
-	@Test
+	@Test(priority =2)
 	public void verifyDashboardLabelTest() {
 		String dashboardLabel = dashboardPage.verifyDashboardLabel();
 		Assert.assertEquals(dashboardLabel, "Dashboard");
 	}
 	
-	@Test
+	@Test(priority =3)
 	public void verifyAssignLeaveButtonTest() {
 		leavePage = dashboardPage.clickAssignLeaveButton();	
 	}
