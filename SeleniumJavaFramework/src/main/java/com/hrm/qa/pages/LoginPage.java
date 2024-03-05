@@ -46,8 +46,7 @@ public class LoginPage extends TestBase {
 		userName.sendKeys(un);
 		password.sendKeys(pwd);
 		loginBtn.click();
-		//ExtentReport.test.pass("Login button clicked successfully");
-		ExtentReport.test.pass("Login button clicked successfully");
+		//ExtentReport.test.pass("Login button clicked successfully");		
 		return new DashBoardPage();
 
 	}
@@ -56,7 +55,7 @@ public class LoginPage extends TestBase {
 		userName.sendKeys(uname);
 		password.sendKeys(pwd);
 		loginBtn.click();	
-		ExtentReport.test.pass("Welcome DashBoard Page");
+		//ExtentReport.test.pass("Welcome DashBoard Page");
 		return new DashBoardPage();
 		
 	}

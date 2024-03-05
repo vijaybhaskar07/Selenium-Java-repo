@@ -6,9 +6,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.hrm.qa.base.TestBase;
+import com.hrm.qa.extentReports.ExtentReport;
 import com.hrm.qa.pages.DashBoardPage;
 import com.hrm.qa.pages.LeavePage;
 import com.hrm.qa.pages.LoginPage;
+import com.hrm.qa.util.TestUtil;
 
 public class DashBoardPageTest extends TestBase {
 
@@ -23,21 +25,24 @@ public class DashBoardPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		loginPage = new LoginPage();
+		loginPage = new LoginPage();		
 		dashboardPage = new DashBoardPage();
 		loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
+		
 
 	}
 
 	@Test(priority =1)
 	public void verifyDashboardPageTitleTest() {
 		String dashboardTitle = driver.getTitle();
+		//ExtentReport.createTest("verifyDashboardPageTitleTest");
 		Assert.assertEquals(dashboardTitle, "OrangeHRM", "DashboardTitle not matched");
 	}
 
 	@Test(priority =2)
 	public void verifyDashboardLabelTest() {
 		String dashboardLabel = dashboardPage.verifyDashboardLabel();
+		//ExtentReport.createTest("verifyDashboardLabelTest");
 		Assert.assertEquals(dashboardLabel, "Dashboard");
 	}
 	

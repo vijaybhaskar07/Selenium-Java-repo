@@ -47,7 +47,7 @@ public class LoginPageTest extends TestBase {
 
 	@Test(priority = 3)
 	public void loginTest() {
-		ExtentReport.createTest("loginTest");
+		//ExtentReport.createTest("loginTest");
 		dashboardPage = loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
 
 	}

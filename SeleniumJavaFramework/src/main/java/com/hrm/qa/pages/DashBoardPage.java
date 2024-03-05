@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.hrm.qa.base.TestBase;
+import com.hrm.qa.extentReports.ExtentReport;
 
 public class DashBoardPage extends TestBase {
 
@@ -25,7 +26,7 @@ public class DashBoardPage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public String verifyDashboardLabel() {
+	public String verifyDashboardLabel() {	
 		return dashboardLabelName.getText();
 	}
 
