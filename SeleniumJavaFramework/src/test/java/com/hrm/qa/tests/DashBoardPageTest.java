@@ -25,30 +25,29 @@ public class DashBoardPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		loginPage = new LoginPage();		
+		loginPage = new LoginPage();
 		dashboardPage = new DashBoardPage();
 		loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
-		
 
 	}
 
-	@Test(priority =1)
+	@Test(priority = 1)
 	public void verifyDashboardPageTitleTest() {
 		String dashboardTitle = driver.getTitle();
-		//ExtentReport.createTest("verifyDashboardPageTitleTest");
+		// ExtentReport.createTest("verifyDashboardPageTitleTest");
 		Assert.assertEquals(dashboardTitle, "OrangeHRM", "DashboardTitle not matched");
 	}
 
-	@Test(priority =2)
+	@Test(priority = 2)
 	public void verifyDashboardLabelTest() {
 		String dashboardLabel = dashboardPage.verifyDashboardLabel();
-		//ExtentReport.createTest("verifyDashboardLabelTest");
+		// ExtentReport.createTest("verifyDashboardLabelTest");
 		Assert.assertEquals(dashboardLabel, "Dashboard");
 	}
-	
-	@Test(priority =3)
+
+	@Test(priority = 3)
 	public void verifyAssignLeaveButtonTest() {
-		leavePage = dashboardPage.clickAssignLeaveButton();	
+		leavePage = dashboardPage.clickAssignLeaveButton();
 	}
 
 	@AfterMethod
