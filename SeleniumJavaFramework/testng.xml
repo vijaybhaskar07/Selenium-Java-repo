@@ -7,11 +7,9 @@
 </listeners>
 	<test name="HRM app Test cases">
 
-		<classes>
+		<classes>			
 			<class name="com.hrm.qa.tests.LoginPageTest"></class>
 			<class name="com.hrm.qa.tests.DashBoardPageTest"></class>
-
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

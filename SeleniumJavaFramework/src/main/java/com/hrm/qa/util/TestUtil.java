@@ -23,7 +23,7 @@ public class TestUtil extends TestBase {
 	static org.apache.poi.ss.usermodel.Sheet sheet;	
 	
 	//public static String HRM_TESTDATA_SHEET_PATH = "C:\\Users\\GUDDAM\\git\\repository\\Selenium-Java-repo\\SeleniumJavaFramework\\src\\main\\java\\com\\hrm\\qa\\testdata\\HRM_Testdata.xlsx";
-	public static String HRM_TESTDATA_SHEET_PATH = "C:\\Users\\GUDDAM\\git\\Selenium-Java-repo\\SeleniumJavaFramework\\src\\main\\java\\com\\hrm\\qa\\testdata\\HRM_Testdata.xlsx";
+	public static String HRM_TESTDATA_SHEET_PATH = "C:\\repoCode\\Selenium-Java-repo\\SeleniumJavaFramework\\src\\main\\java\\com\\hrm\\qa\\testdata\\HRM_Testdata.xlsx";
 	
 	public void switchToFrame() {
 		driver.switchTo().frame("");
