@@ -28,7 +28,6 @@ public class DashBoardPageTest extends TestBase {
 		loginPage = new LoginPage();
 		dashboardPage = new DashBoardPage();
 		loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
-
 	}
 
 	@Test(priority = 1)
